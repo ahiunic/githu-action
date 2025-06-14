@@ -7,10 +7,6 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
-app.get("/chai", (req, res) => {
-  res.send("Hello World chai");
-});
-
 // takes params from url and returns a response
 app.get("/:id", (req, res) => {
   res.send(`Hello hitesh World ${req.params.id}`);
